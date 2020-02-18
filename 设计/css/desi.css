@@ -1,0 +1,274 @@
+.header{
+    height: 120px;
+    width: 1046px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    line-height: 120px;
+}
+.header-right{
+    height: 120px;
+    float: right;
+    position: relative;
+}
+.header-right>div{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.header-right ul{
+    margin-top: 88px;
+}
+.header-right ul a{
+    float: left;
+    line-height: 13px;
+}
+.header-right ul a li{
+    border-right: 1px solid #000000;
+    height: 13px;
+    font-size: 15px;
+    padding: 0 25px;
+    font-weight: bold;
+    color: #666;
+}
+.header-right ul a li:hover{
+    color: #000000;
+}
+.header-right ul a:last-child li{
+    border: none;
+}
+.banner{
+    min-width: 1080px;
+}
+.banner-wrap{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    /*永不换行*/
+    white-space: nowrap;
+    position: relative;
+}
+.banner-wrap .banner-img{
+    height: 100%;
+    margin: 0 auto;
+    width: 200%;
+    position: relative;
+}
+.banner-wrap .banner-img li{
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+}
+.clear_fix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.banner-wrap .banner-img li img{
+    width: 100%;
+    height: 100%;
+}
+.left-button{
+    cursor: pointer;
+    width: 71px;
+    height: 71px;
+    background: #999;
+    top:50%;
+    left: 65px;
+    position: absolute;
+}
+.left-button img{
+    width: 100%;
+    height: 100%;
+}
+.right-button{
+    cursor: pointer;
+    width: 71px;
+    height: 71px;
+    background: #999;
+    top:50%;
+    right: 65px;
+    position: absolute;
+}
+.right-button img{
+    width: 100%;
+    height: 100%;
+}
+/*五个logo部分*/
+.content_one{
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 260px;
+}
+.content_one img{
+    padding: 60px 30px;
+    width: 195px;
+    height: 130px;
+}
+.content_one .white_img{
+    position: relative;
+    bottom: 255px;
+    opacity: 0;
+}
+.content_one .white_img:hover{
+    opacity: 1;
+}
+/*案例展示布局样式*/
+.content_two{
+    width:100%;
+    background:gainsboro;
+    text-align: center;
+    height: 800px;
+}
+.content_header{
+    width: 1040px;
+    margin: 0 auto;
+}
+.content_header div:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.content_header div:nth-child(3){
+    padding-bottom: 40px;
+}
+.content_header div span{
+    color:#666;
+    font-size: 13px;
+}
+.mid{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.mid img{
+    padding: 5px 5px 40px 5px;
+}
+.mid .bottom_img{
+    position:relative;
+    bottom: 508px;
+}
+.mid .bottom_img:hover{
+    opacity: 0;
+}
+/*关于我们的布局样式*/
+.content_three{
+    width: 100%;
+    height: 700px;
+    background: url("../img/h.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.three_wrap{
+    text-align: center;
+    padding-top:138px;
+}
+.three_wrap span{
+    color:#666666;
+    font-size: 13px;
+    font-family: 微软雅黑;
+    display: block;
+}
+.three_wrap div:nth-child(2){
+    margin-top: 50px;
+}
+.bottom_text span:nth-child(1){
+    color: #000000;
+    font-size: 18px;
+    font-family:SimSun;
+    font-weight: bold;
+}
+.top_text span,.bottom_text span{
+    color:#666666;
+    font-size: 13px;
+    padding: 2px 0;
+}
+.top_text span:first-child{
+    font-size: 16px;
+}
+.bottom_text span{
+    font-size: 16px;
+    font-family: SimSun;
+    color: #000000;
+}
+.bottom_text span:nth-child(3){
+    font-size: 18px;
+    font-weight: bold;
+}
+/*服务流程布局样式*/
+.four_wrap{
+    padding-bottom: 120px;
+    text-align: center;
+}
+.four_wrap img{
+    margin-bottom: 40px;
+}
+.four_wrap  div img{
+    width: 40px;
+    height: 20px;
+}
+.four_wrap>div img{
+    margin-bottom: -5px;
+}
+/*页脚声明二维码*/
+.footer{
+    background: #333;
+    text-align:right;
+}
+.footer_wrap img{
+    width: 125px;
+    height: 125px;
+}
+.footer_wrap{
+    width:1040px;
+    margin: 0 auto;
+    padding: 26px 0 32px 0;
+}
+.footer_wrap span{
+    font-family: SimSun;
+    font-size: 13px;
+    color: #999;
+}
+.footer_text span:last-child{
+    text-align:right;
+    font-size:13px;
+    color: #fff;
+    margin-left:110px;
+}
+.footer_text span:nth-child(4){
+    margin: 0 10px;
+}
+/*悬浮出现二级菜单*/
+.show_list{
+    position:relative;
+}
+.show_list .move_list{
+    display: none;
+    z-index: 103;
+    position: absolute;
+    top:-56px;
+    left:0;
+    width: 100%;
+    background:#333;
+    text-align:center;
+}
+.show_list .move_list li{
+    padding: 10px 0;
+    width: 110px;
+    color: #fff;
+}
+.header-right ul a .show_list{
+    padding-bottom: 20px;
+    border-right: none;
+}
+.show_list:hover .move_list{
+    display:block;
+}
+.header-right ul a:nth-child(3){
+    border-left:1px solid #000;
+}
+.show_list .move_list li:hover{
+    color:#fff;
+    background:orangered;
+}
