@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页调用搜索引擎</title>
+</head>
+<body>
+<!--谷歌的name为q或query才能传参，百度的name必须为wd或word,搜狗的的name可以是word或query-->
+<form method="get" action="http://www.google.com/search" target="_blank">
+     <input name="query" size="40" maxlength="255" type="text" /> <input name="btnG" value="谷歌搜索" type="submit" />
+</form>
+<!--target="_blank"代表在新的窗口打开页面-->
+<form action="http://www.baidu.com/baidu" target="_blank">
+    <table bgcolor="#FFFFFF" style="font-size:19pt;">
+        <tr>
+            <td>
+                <input name="tn" type=hidden value=baidu>
+                <a href="http://www.baidu.com/" target="_blank">
+                    <img   src="http://img.baidu.com/img/logo-137px.gif"
+                         alt="Baidu" align="bottom" border="0"></a>
+                <input type="text" name="word" size="30">
+                <input type="submit" value="百度搜索">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<!--target="_self"代表在原来的窗口打开页面-->
+<form name="f1" action="http://www.baidu.com/baidu" target="_self">
+    <table bgcolor="#FFFFFF" style="font-size:9pt;">
+        <tr height="60">
+            <td valign="top">
+                <a href="http://www.baidu.com/">
+                    <img src="//www.baidu.com/img/pc_1c6e30772d5e4103103bd460913332f9.png" width="120" height="60"
+                         border="0" alt="baidu">
+                </a>
+            </td>
+            <td>
+                <input name=word size="30" maxlength="100">
+                <input type="submit" value="百度搜索"><br>
+                <input name=tn type=hidden value="bds">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

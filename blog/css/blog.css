@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrap{
+    background: url("../img/banner.jpg") no-repeat;
+    background-position: center center;
+    background-attachment:fixed;//随着页面的滚动轴背景图片不会移动
+    background-size: cover;//等比填满背景
+    Font-family: Tahona,Arial,Roboto,"DroiaSans", "Helvetica Neue", "Droid Sans Fallback","Heiti SC",sans-serif;
+}
+em,i{
+    font-style: normal;
+}
+li{
+    list-style: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+button{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px blue;
+}
+a{
+    color: #666;
+    text-decoration: none;//文字修饰，去掉下划线
+}
+a:visited{
+    color: #1a0973;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    font-size: 25px;
+}
+.header{
+    line-height: 50px;
+}
+.header nav{
+    height: 50px;
+    background-color: #ccc;
+}
+nav ul li{
+    float:right;
+    margin-left: 30px;
+}
+.logo{
+    float:left;
+    margin-left:40px;
+}
+.logo a{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;//字符间距
+}
+.header{
+    background:rgba(0,0,0,.4);
+}
+.banner{
+    height: 600px;
+}
+.banner .inner{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative;
+    top:160px;
+}
+.line{
+    margin: 0 auto;
+    background:#fff;
+    height: 2px;
+    width:65%;
+    margin-bottom: 10px;
+}
+.inner h1{
+    margin-bottom: 10px;
+    /*text-shadow: 5px 5px 3px lawngreen;*/
+}
+.banner .inner p{
+    line-height: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.banner .inner button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:lawngreen;
+    border: none;
+    color: #fff;
+    outline: none;//去掉按钮边框显示
+}
+.banner .inner button:hover{
+    transform: rotate(720deg) scale(1.5);//旋转和放大2倍 -webkit-transition: prop time;
+    transition:2s;//过渡
+}
+.banner .inner .more{
+    margin-top: 140px;
+}
+.content{
+    opacity: 0.9;
+}
+
+.part_one{
+    text-align: center;
+    color: #fff;
+    background: rgba(67,178,165,1);
+    padding-top: 65px;
+    opacity: 0.95;//不透明度
+}
+.wraper{
+    margin: 0 auto;
+    max-width: 1080px;
+}
+.wraper h1{
+    padding: 15px 0;
+    font-size: 27px;
+}
+.wraper .line{
+    margin: 15px auto;
+    width: 40%;
+    background-color: darkgray;
+}
+.wraper p{
+    padding: 15px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.icon{
+    margin: 30px auto;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+.icon .item{
+    margin-right: 50px;
+    border: 2px solid green;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+}
+.icon .item img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg);
+    border-radius: 50px;
+}
+.part_two{
+    background:rgb(33,41,50) ;
+}
+.first .text_right{
+    float: right;
+}
+.first_left{
+    width:40%;
+}
+.first_left img{
+    width: 100%;
+}
+.first>div{
+    float: left;
+}
+.clear_fix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.first_text{
+    position: relative;
+    top:68px;
+    left: 50px;
+    width: 55%;
+    color: #fff;
+}
+.first_text h2{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.first_text .first_tittle{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.first_text p{
+    width: 92%;
+    font-size: 20px;
+}
+.first:nth-child(odd){
+    background: rgba(255,255,255,.1);
+}
+.part_three{
+    background:#3f3965;
+    opacity: 0.9;
+    color: #fff;
+}
+.three_wrap{
+    margin: 0 auto;
+    width: 60%;
+}
+.three_wrap .three_text{
+    padding-top: 65px;
+}
+.three_text h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.three_text .line{
+    background:#1a0973;
+    width: 55%;
+    margin-bottom: 20px;
+}
+.three_text .text_p{
+    font-size: 17px;
+}
+.card{
+    min-height: 300px;
+    width: 50%;
+    padding: 50px;
+    float: left;
+    max-width: 461px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-top: 20px;
+}
+.card h2{
+    text-align: center;
+}
+.card:nth-child(1){
+    background: rgba(0,0,0,0.05);
+}
+.card:nth-child(2){
+     background: rgba(0,0,0,0.1);
+}
+.card:nth-child(3){
+    background: rgba(0,0,0,0.15);
+}
+.card:nth-child(4){
+     background: rgba(0,0,0,0.2);
+}
+.card:nth-child(5){
+      background: rgba(0,0,0,0.25);
+}
+.card:nth-child(6){
+    background: rgba(0,0,0,0.3);
+}
+.footer{
+    background:#333;
+    min-height:200px;
+    text-align: center;
+    color: #fff;
+}
+.share_group{
+    display: block;
+    margin: 0 auto;
+    width: 1080px;
+    padding: 45px;
+}
+.share_group li{
+    display: inline-block;
+    padding: 10px;
+}
+.active{
+    position: relative;
+}
+
+.active span{
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    bottom: 5px;
+    left: 0;
+}
+/*用于点击侧栏菜单时使得整个页面变暗的效果*/
+.mask{
+    display: none;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.3);
+}
+.silder{
+    background: #333;
+    position:fixed;
+    top:0;
+    right: -300px;
+    bottom: 0;
+    width: 300px;
+    transition: .3s;//用于侧栏菜单的过渡效果
+}
+.silder ul li{
+    margin-top: 30px;
+    padding: 15px;
+}
+.silder ul li:hover{
+    background: gainsboro;
+}
+.silder ul li a{
+    color: #fff;
+}
+.top{
+    display: none;
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 90px;
+}
+.top p,img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+.top p{
+    color: #ffffff;
+    font-family: serif;
+    font-weight: bold;
+}
