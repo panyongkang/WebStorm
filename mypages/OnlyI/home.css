@@ -22,7 +22,7 @@ em, i {
 }
 
 body {
-    background: #fff url(../images/bg.png) repeat-x;
+    background: #fff url(../img/bg.png) repeat-x;
     color: #333;
     font: 14px/1.7 Tahoma, Geneva, "\5B8B\4F53";
 }
@@ -140,20 +140,20 @@ a i {
 #topsite em,
 #topsite .tsbox .arrow,
 .searchTab .more i {
-    background-image: url(../images/main.png);
+    background-image: url(../img/main.png);
     background-repeat: no-repeat;
 }
 
 .tool,
 .sideTab,
 .catList {
-    background-image: url(../images/side_bg.png);
+    background-image: url(../img/side_bg.png);
     background-repeat: repeat-y;
 }
 
 .rt,
 .rb {
-    background-image: url(../images/side_bg.png);
+    background-image: url(../img/side_bg.png);
     background-repeat: no-repeat;
     display: block;
     height: 3px;
@@ -366,7 +366,7 @@ a i {
 
 .mailArea .btn {
     font-size: 12px;
-    height: 18x;
+    height: 18px;
     float: left;
     line-height: 18px;
     font-weight: normal;
@@ -446,12 +446,29 @@ a i {
 .search {
     background: #f7fff4;
     border: 2px solid #2ab2df;
-    height: 110px;
+    height: 130px;
     margin-bottom: 10px;
     position: relative;
     z-index: 100;
 }
+.ewm{
+    width: 90px;
+    height: 90px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.ewm span{
+   font-family: Algerian;
+    font-weight: 700;
+    color: #17171638;
+}
 
+.ewm img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
 .sForm {
     float: left;
     width: 616px;
@@ -500,13 +517,6 @@ a i {
     height: 31px;
     width: 50px;
     text-align: center;
-}
-
-.searchTab .current {
-    background-position: 0 -32px;
-    color: #fff;
-    font-weight: bold;
-    width: 51px;
 }
 
 .searchTab .more {
@@ -568,16 +578,6 @@ a i {
 .searchMain .searchLogo img {
     margin-top: -2px;
     width: 101px;
-}
-
-.searchMain .key {
-    background-position: 0 0;
-    float: left;
-    height: 32px;
-    width: 390px;
-    margin-right: 5px;
-    position: relative;
-    overflow: hidden;
 }
 
 .searchMain .sKeyInput {
@@ -888,7 +888,7 @@ a i {
 .sideTab,
 .catList {
     background-position: -436px 0;
-    _background-position: -435px 0;
+
 }
 
 .catList {
