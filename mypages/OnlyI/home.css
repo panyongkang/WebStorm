@@ -560,7 +560,7 @@ a i {
 }
 
 .searchMain {
-    height: 75px;
+    /*height: 75px;*/
     padding-left: 43px;
     width: 550px;
     position: relative;
@@ -936,6 +936,10 @@ a i {
     border: 2px solid #2ab2df;
 }
 
+/*.topSite{*/
+/*    margin-bottom:33px;*/
+/*}*/
+
 .topSite li {
     float: left;
     height: 29px;
@@ -1044,17 +1048,18 @@ a i {
     overflow: hidden;
 }
 
-.hotKey a {
-    margin: 0 8px;
-    font-size: 12px;
+.hotKey span{
+    color: rgba(7, 7, 63, 0.4);
 }
 
 .hotKey a{
+    padding: 0 10px;
+    font-size: 12px;
     color: #df051a;
-    padding: 5px 2px;
 }
+
 .botList strong a{
-    color: #00aa00;
+    color: #df051a;
 }
 
 .botList strong a:hover{
